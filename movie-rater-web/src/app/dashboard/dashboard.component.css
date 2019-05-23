@@ -1,0 +1,41 @@
+p{
+    color: white;
+}
+.sidenav-container{
+    height: 100%;
+}
+.sidenav{
+    width: 200px;
+    background: black;
+}
+
+.sidenav .mat-toolbar{
+    background:black;
+    margin-top: 18px;
+}
+.mat-toolbar.mat-primary{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.mat-toolbar{
+    background: black;
+
+}
+.logo_dash{
+    background: #222222;
+    width: 100%;
+    
+}
+.header_container{
+   width: 100%;
+    
+}
+.header1{
+    float: left;
+    
+}
+.header2{
+    float: right;
+    
+}

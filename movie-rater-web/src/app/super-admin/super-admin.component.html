@@ -1,0 +1,222 @@
+
+<div class="container-fluid">
+  
+
+  
+  <div class="row">
+      <div class="dashboard_trakcer">Dashboard</div>
+       <hr>
+          
+
+<!-- 1st snapshot start -->
+<div class="col-lg-3 col-sm-6 col-xs-6">
+        <div class="circle-title2">
+            <div class="circle-title-heading">
+                <i class="fa fa-bell fa-fw fa-3x"></i>
+            </div>
+        <div class="box">
+            <div class="box-heading text-faded">Alarms</div>
+
+            <div class="box-number text-faded">45</div>
+
+            <a du-smooth-scroll="table" du-scrollspy class="footer">More Info<i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+        </div>
+        
+   </div>
+
+   
+   <!-- 1st snapshot end -->
+
+
+<!-- 2nd snapshot start -->
+<div class="col-lg-3 col-sm-6 col-xs-6">
+        <div class="circle-title2">
+            <div class="circle-title-heading">
+                    <img id="img-ctn" src="assets/image/consume.png" width="45">
+            </div>
+        <div class="box">
+            <div class="box-heading text-faded">Energy Consumed</div>
+
+            <div class="box-number text-faded">2586</div>
+
+            <a du-smooth-scroll="table" du-scrollspy class="footer">More Info<i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+        </div>
+        
+   </div>
+
+   
+   <!-- 2nd snapshot end -->
+
+           <!-- 3rd snapshot start -->
+           <div class="col-lg-3 col-sm-6 col-xs-6">
+                <div class="circle-title2">
+                    <div class="circle-title-heading">
+                            <img id="img-ctn" src="/assets/image/energy.png" width="45">
+                    </div>
+                <div class="box">
+                    <div class="box-heading text-faded">Energy Saved</div>
+
+                    <div class="box-number text-faded">391</div>
+
+                    <a du-smooth-scroll="table" du-scrollspy class="footer">More Info<i class="fa fa-chevron-circle-right"></i></a>
+                </div>
+                </div>
+                
+           </div>
+
+           
+           <!-- 3rd snapshot end -->
+
+           <!-- 4th snapshot start -->
+           <div class="col-lg-3 col-sm-6 col-xs-6">
+                <div class="circle-title2">
+                    <div class="circle-title-heading">
+                            <img id="img-ctn" src="/assets/image/low.png" width="45">
+                    </div>
+                <div class="box">
+                    <div class="box-heading text-faded">% saved</div>
+
+                    <div class="box-number text-faded">391</div>
+
+                    <a du-smooth-scroll="table" du-scrollspy class="footer">More Info<i class="fa fa-chevron-circle-right"></i></a>
+                </div>
+                </div>
+                
+           </div>
+</div>
+           
+           <!-- 4th snapshot end -->
+
+      
+
+      <!--power-status and customer power-status start-->
+      <div class="row">   
+        
+           <div class="col-lg-8 col-sm-8 col-xs-8">
+                   
+                       <div class="panel-heading">
+                        <i class="fa fa-bar-chart-o"></i> Status     
+                    </div>
+                 
+                    <div class="status-panel-body">
+                        <!-- chart display here -->
+                    </div>
+                   
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-4">
+                      <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o"></i> Customers Power Status
+                        </div>
+                        <div class="status-panel-body"></div>
+            </div>      
+      </div>                <!--End of the power-status and customer power-status-->
+        
+      
+        
+
+<!-- table with pagination -->
+
+<div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-12">
+                <div class="heading-panel">
+            <i class="fa fa-bar-chart-o"></i>Customer Details
+                            <form>
+                               <input type="radio" name="gender" value="daily" class="button"  checked> Daily 
+                               <input type="radio" name="gender" value="hourly"> Hourly 
+                               <input type="radio" name="gender" value="weekly"> Weekly 
+                               <input type="radio" name="gender" value="monthly"> Monthly 
+                             </form>
+                            
+                    </div>
+                   
+                    <div class="panel-body" >
+                      
+            <!-- table start -->
+            <div class="mat-elevation-z8" >
+                <table mat-table [dataSource]="dataSource" *ngIf="isCollapsed">
+              
+                  <!-- Customer Id Column -->
+                  <ng-container matColumnDef="cust_id">
+                    <th mat-header-cell *matHeaderCellDef> Customer Id </th>
+                    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                  </ng-container>
+              
+                  <!-- Customer Name Column -->
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Customer Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.Name}} </td>
+                  </ng-container>
+              
+                  <!-- EmailID Column -->
+                  <ng-container matColumnDef="email">
+                        <th mat-header-cell *matHeaderCellDef> Email ID </th>
+                        <td mat-cell *matCellDef="let element"> {{element.Email}} </td>
+                      </ng-container>
+
+                  <!-- Contact No. Column -->
+                  <ng-container matColumnDef="contact">
+                    <th mat-header-cell *matHeaderCellDef> Contact No. </th>
+                    <td mat-cell *matCellDef="let element"> {{element.Contact_no}} </td>
+                  </ng-container>
+              
+                  <!-- Total No. of Aisles Column -->
+                  <ng-container matColumnDef="sites">
+                    <th mat-header-cell *matHeaderCellDef> Total No. of sites </th>
+                    <td mat-cell *matCellDef="let element"> {{element.Total_Property}} </td>
+                  </ng-container>
+
+                  <!-- Energy consumed Column -->
+                  <ng-container matColumnDef="energyConsume">
+                        <th mat-header-cell *matHeaderCellDef> Energy consumed </th>
+                        <td mat-cell *matCellDef="let element"> {{element.energyConsume}} </td>
+                      </ng-container>
+
+                      <!-- Energy % saved Column -->
+                  <ng-container matColumnDef="savedEnergy">
+                        <th mat-header-cell *matHeaderCellDef> Energy % saved </th>
+                        <td mat-cell *matCellDef="let element" > {{element.savedEnergy}} </td>
+                      </ng-container>
+              
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns" ></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="getRecord(row)" ></tr>
+                  
+                  
+                </table>
+              
+                <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+              </div>
+                      
+              <div *ngIf="!isCollapsed">
+                <H3>Now table is Hidden...Good Job</H3>
+              </div>
+            <!-- table end -->
+              </div>
+        </div>
+    </div>
+   <!-- table with pagination end-->
+
+
+       <!--chart start-->
+      <div class="row">
+         <div class="col-lg-12 col-xs-12">
+                <div class="heading-panel">
+                   <i class="fa fa-bar-chart-o"></i>Total Energy Saved
+                </div>
+            <div class="chart-body">
+                 <fusioncharts
+                    width="100%"
+                    [type]="type"
+                    [dataFormat]="dataFormat"
+                    [dataSource]="dataSource23">
+                 </fusioncharts>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+
+

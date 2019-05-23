@@ -1,0 +1,90 @@
+
+.logo{
+    margin-top: 80px;
+    margin-bottom: 8px;
+}
+.bottom-text{
+    
+display: inline;
+}
+.example-full-width{
+    width: 300px;
+    color: white;
+}
+form button{
+    position: relative;
+    width: 300px;
+    margin-top: 3px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+#fp{
+    position: relative;
+    margin-left: 180px;
+        
+}
+#fp{
+    color: #e66f00;
+    font-size: 14px;
+    
+}
+#avc{
+    color: #e66f00;
+    font-size: 14px;
+}
+#sup{
+    color: #e66f00;
+    font-size: 14px;
+}
+#esm{
+    color: #e66f00;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+  
+  /* When the input is focused underline color*/
+  .mat-form-field-ripple {
+    background-color: white !important;
+}
+.mat-form-field-underline {
+    background-color: #ffffff !important;
+}
+
+/* When the input is not focused */
+    .mat-form-field .placeholder {
+        color: #ffffff;
+    }
+    /* When the input is focused */
+    .mat-focused .placeholder{
+        color: white;
+    }
+.mat-raised-button{
+    background-color: #E66F00;
+    background-image: linear-gradient(rgb(236, 206, 73),#e0740f);
+    color: white;
+}
+.modal-content{
+    background:rgb(48, 47, 46);
+    text-align: left;
+}
+.modal-header{
+    background:#E66F00;
+}
+.modal-title{
+    color: white;
+}
+label{
+    color:white;
+    
+}
+.footimg{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+.bottomImg{
+    width: 100%;
+    height: 200px;
+}

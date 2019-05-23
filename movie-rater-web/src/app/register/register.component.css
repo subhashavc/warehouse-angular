@@ -1,0 +1,14 @@
+.modal-content{
+    background:rgb(48, 47, 46);
+    text-align: left;
+}
+.modal-header{
+    background:#E66F00;
+}
+.modal-title{
+    color: white;
+}
+label{
+    color:white;
+    
+}

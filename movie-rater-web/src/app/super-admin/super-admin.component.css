@@ -1,0 +1,195 @@
+.dashboard_trakcer{
+   
+   margin-top: 10px;
+   margin-left:10px;
+   margin-right: 5px;
+   font-size: 18px;
+}
+
+hr {
+    width: 95%;
+    height: 1px;
+    margin-left: 10px;
+    margin-top: 0px;
+    background-color:#666;
+    
+   }
+
+  
+  /* Snapshot row start */
+
+  .circle-title2{
+    margin-bottom: 15px;
+    text-align: center;
+    
+    
+     }
+    .circle-title-heading{
+      position:relative; 
+      height: 80px; 
+      width: 80px;
+      margin: 0 auto -40px;
+      border-radius: 100%;
+      transition: all ease-in-out .3s;
+      background:#ff7a01;
+      color: #fff;
+    } 
+    .circle-title-heading .fa{
+       line-height: 80px;
+    }
+    .circle-title-heading .fa.icon{
+      font-size: 4em;
+      padding-top: 8px;
+   }
+    .box{
+      padding-top: 50px;
+      background-color: #222222;
+      border: 1px solid #ff7a01;
+      border-radius: 5px;
+    
+   }
+   .box:hover{
+      border-color: #4C4B4B;
+      background-color: #4C4B4B;
+   }
+   .box-heading{
+        text-transform: uppercase;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+   }
+   .text-faded{
+      color:rgba(255,255,255,0.7);
+   }
+   .box-number{
+      padding:5px 0 15px;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1;
+   }
+   .footer{
+      display: block;
+      padding: 5px;
+      color:rgba(255,255,255,0.5);
+      transition: all ease-in-out .3s;
+   }
+   .footer:hover{
+      text-decoration: none;
+      color:rgba(255,255,255,0.5);
+      background-color: rgba(0,0,0,0.2);
+   }
+   #img-ctn{
+      padding-top: 14px;
+   }
+   
+/* Snapshot row end */
+
+
+
+/* status and energy power status row Starts */
+.panel-heading{
+   position: relative;
+   width: auto;
+   background-color: #ff7a01;
+   margin-top: 0px;
+   margin-left: 0px;
+   border: 1px;
+   border-radius: 3px;
+   text-align: left;
+   padding: 5px;
+   font-size: 16px;
+}
+.hover-effect{
+   border-color: #4C4B4B;
+      background-color: #4C4B4B;
+}
+.status-panel-body{
+       height:300px;
+       width:auto;
+       background-color:black;
+       position:relative;
+       margin-left:0px;
+       border-radius:3px; 
+       border:1px solid #ff7a01;  
+       }  
+/* status and energy power status row End */
+
+
+/* Customer detail table start */
+
+.heading-panel{
+   background:#ff7a01;
+   padding:5px;
+   text-align: left;
+   font-size: 16px;
+   border-radius: 3px;
+   margin-top: 12px;
+   }
+   .panel-body{
+      width:100%;
+      border:1px solid #ff7a01;
+      padding: 5px;  
+   }  
+
+   .table-data{
+      width:100%; 
+      text-align:center;
+      border-spacing: 0;
+      border-collapse: collapse;
+      
+   }
+   th mat-header-cell{
+      background-color: #000000;
+      padding: 8px;
+      text-align: center;
+   }
+    td{
+      
+      padding:8px;
+   } 
+   tr:nth-child(odd){
+      background-color: #666;
+   }
+   tr:nth-child(even){
+      background-color: #222222;
+   }
+    form{
+      text-align: right;
+      margin-top:-20px;
+       font-size:14px;
+       
+      }
+/* Customer detail table end */
+
+/* Energy status graph start */
+.chart-body{
+   width: 100%;
+   border:1px solid #ff7a01;
+   padding: 5px;
+}
+
+
+
+/* Energy status graph end */
+
+table {
+   width: 100%;
+   text-align:center;
+      border-spacing: 0;
+      border-collapse: collapse;
+ }
+ .mat-paginator{
+    background: #000000;
+ }
+ .mat-header-cell{
+   background-color: #000000;
+   padding: 8px;
+   text-align: center;
+   font-size: 16px;
+}
+.headerRow{
+   background: #7a0c0c !important;
+   padding: 8px;
+   text-align: center;
+   font-size: 16px;
+}

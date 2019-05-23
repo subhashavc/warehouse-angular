@@ -1,0 +1,19 @@
+
+<p>Welcome {{account.username}}</p>
+<button id="logout" mat-ripple mat-raised-button color="primary" (click)="logOut()">Logout</button><br>
+
+<!-- <a style="cursor:pointer; color:white;" (click)="logOut()">LogOut</a> -->
+<div *ngFor="let movie of infosk;">
+    <p>{{movie.title}}</p>
+</div>
+
+<div *ngFor="let token of infoToken;">
+    <h3 (click)="switchDash()">{{token.key}}</h3>
+    <p>{{token.user}}</p>
+</div>
+<popup  class="pop" #popup1 (confirmClick)="YourConfirmEvent()">
+    Are You Sure Want to Logout?
+</popup>
+
+
+
